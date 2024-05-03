@@ -2,6 +2,8 @@ package Controller;
 
 import Model.Hotel;
 
+import java.util.HashMap;
+
 public class Chambre {
 
     Hotel hotel;  //Hotel dont la chambre appartient
@@ -10,8 +12,9 @@ public class Chambre {
     public boolean vip;  // indique est ce que la chambre est vip ou non
     public boolean reservee;  //indique si la chambre est reservee ou non
 
-    Date date_debut;
-    Date date_fin;
+     public HashMap<Date,Date> chambres_reservees=new HashMap<>();
+
+
 
 
     public Chambre(Hotel hotel,int nombre_lits,boolean vip)

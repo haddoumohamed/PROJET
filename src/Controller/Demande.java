@@ -4,11 +4,11 @@ import Model.Hotel;
 
 public class Demande {
     Hotel hotel;
-    Client client;
-    int nbr_lit_souhaitee;
-    boolean vip;
-    Date date_debut;
-    Date date_fin;
+    public Client client;
+    public int nbr_lit_souhaitee;
+    public boolean vip;
+    public Date date_debut;
+    public Date date_fin;
 
     /*Sejour
     -

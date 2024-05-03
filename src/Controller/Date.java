@@ -54,4 +54,32 @@ public class Date {
 
     public Date() {
     }
+
+
+    public boolean isBetween(Date startDate, Date endDate) {
+        if (this.annee < startDate.annee || this.annee > endDate.annee) {
+            return false;
+        }
+        if (this.annee == startDate.annee && this.mois < startDate.mois) {
+            return false;
+        }
+        if (this.annee == endDate.annee && this.mois > endDate.mois) {
+            return false;
+        }
+        if (this.annee == startDate.annee && this.mois == startDate.mois && this.jour < startDate.jour) {
+            return false;
+        }
+        if (this.annee == endDate.annee && this.mois == endDate.mois && this.jour > endDate.jour) {
+            return false;
+        }
+        return true;
+    }
+
+
+
+
+
+
+
+
 }
