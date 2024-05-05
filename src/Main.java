@@ -3,10 +3,12 @@ import Controller.Chambre;
 import Controller.Client;
 import Controller.Date;
 import Model.Hotel;
+import View.InterfaceDemandeReservation;
 
 public class Main {
     public static void main(String[] args) {
-        Hotel hotell=new Hotel();
+
+       /* Hotel hotell=new Hotel();
         Administrateur administrateur=new Administrateur();
         administrateur.hotel=hotell;
         hotell.administrateur=administrateur;
@@ -53,6 +55,9 @@ public class Main {
 
 
 
+        */
+
+        InterfaceDemandeReservation interfaceDemandeReservation=new InterfaceDemandeReservation();
 
 
 
